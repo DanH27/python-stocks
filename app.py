@@ -13,7 +13,7 @@ zyngaHighs = []
 
 
 #Tesla Section
-tesla = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=TSLA&outputsize=full&apikey=JQ5OZI602IGDD72C")
+tesla = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=TSLA&outputsize=full&apikey=")
 
 teslaHighs.append(tesla.json()["Monthly Time Series"]["2018-10-10"]["2. high"])
 teslaHighs.append(tesla.json()["Monthly Time Series"]["2017-12-29"]["2. high"])
@@ -22,7 +22,7 @@ teslaHighs.append(tesla.json()["Monthly Time Series"]["2015-12-31"]["2. high"])
 teslaHighs.append(tesla.json()["Monthly Time Series"]["2014-12-31"]["2. high"])
 
 #Microsoft Section
-microsoft = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=MSFT&outputsize=full&apikey=JQ5OZI602IGDD72C")
+microsoft = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=MSFT&outputsize=full&apikey=")
 microsoftHighs.append(microsoft.json()["Monthly Time Series"]["2018-10-10"]["2. high"])
 microsoftHighs.append(microsoft.json()["Monthly Time Series"]["2017-12-29"]["2. high"])
 microsoftHighs.append(microsoft.json()["Monthly Time Series"]["2016-12-30"]["2. high"])
@@ -30,7 +30,7 @@ microsoftHighs.append(microsoft.json()["Monthly Time Series"]["2015-12-31"]["2. 
 microsoftHighs.append(microsoft.json()["Monthly Time Series"]["2014-12-31"]["2. high"])
 
 #Apple
-apple = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=AAPL&outputsize=full&apikey=JQ5OZI602IGDD72C")
+apple = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=AAPL&outputsize=full&apikey=")
 appleHighs.append(apple.json()["Monthly Time Series"]["2018-10-10"]["2. high"])
 appleHighs.append(apple.json()["Monthly Time Series"]["2017-12-29"]["2. high"])
 appleHighs.append(apple.json()["Monthly Time Series"]["2016-12-30"]["2. high"])
@@ -38,7 +38,7 @@ appleHighs.append(apple.json()["Monthly Time Series"]["2015-12-31"]["2. high"])
 appleHighs.append(apple.json()["Monthly Time Series"]["2014-12-31"]["2. high"])
 
 #Facebook
-facebook = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=FB&outputsize=full&apikey=JQ5OZI602IGDD72C")
+facebook = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=FB&outputsize=full&apikey=")
 facebookHighs.append(facebook.json()["Monthly Time Series"]["2018-10-10"]["2. high"])
 facebookHighs.append(facebook.json()["Monthly Time Series"]["2017-12-29"]["2. high"])
 facebookHighs.append(facebook.json()["Monthly Time Series"]["2016-12-30"]["2. high"])
@@ -46,7 +46,7 @@ facebookHighs.append(facebook.json()["Monthly Time Series"]["2015-12-31"]["2. hi
 facebookHighs.append(facebook.json()["Monthly Time Series"]["2014-12-31"]["2. high"])
 
 #Zynga
-zynga = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=ZNGA&outputsize=full&apikey=JQ5OZI602IGDD72C")
+zynga = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=ZNGA&outputsize=full&apikey=")
 zyngaHighs.append(zynga.json()["Monthly Time Series"]["2018-10-10"]["2. high"])
 zyngaHighs.append(zynga.json()["Monthly Time Series"]["2017-12-29"]["2. high"])
 zyngaHighs.append(zynga.json()["Monthly Time Series"]["2016-12-30"]["2. high"])

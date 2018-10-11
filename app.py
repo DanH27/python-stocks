@@ -1,10 +1,9 @@
-#from flask import Flask
 import requests
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
-#app = Flask(__name__)
+
 teslaHighs = []
 microsoftHighs = []
 appleHighs = []
@@ -53,57 +52,57 @@ zyngaHighs.append(zynga.json()["Monthly Time Series"]["2016-12-30"]["2. high"])
 zyngaHighs.append(zynga.json()["Monthly Time Series"]["2015-12-31"]["2. high"])
 zyngaHighs.append(zynga.json()["Monthly Time Series"]["2014-12-31"]["2. high"])
 
-# names = ["2018-10-10", "2017-12-29", "2016-12-30", "2015-12-31", "2014-12-31"]
-# values = teslaHighs
-# values.sort()
+names = ["2018-10-10", "2017-12-29", "2016-12-30", "2015-12-31", "2014-12-31"]
+values = teslaHighs
+values.sort()
 
 
-# plt.subplot(131)
-# plt.bar(names, values)
-# plt.xticks(rotation=90)
-# plt.xlabel('Years')
-# plt.ylabel('Stock Prices (High)')
-# plt.show()
-#
-# names = ["2018-10-10", "2017-12-29", "2016-12-30", "2015-12-31", "2014-12-31"]
-# values = microsoftHighs
-# values.sort()
-#
-#
-# plt.subplot(131)
-# plt.bar(names, values)
-# plt.xticks(rotation=90)
-# plt.xlabel('Years')
-# plt.ylabel('Stock Prices (High)')
-# plt.show()
+plt.subplot(131)
+plt.bar(names, values)
+plt.xticks(rotation=90)
+plt.xlabel('Years')
+plt.ylabel('Stock Prices (High)')
+plt.show()
+
+names = ["2018-10-10", "2017-12-29", "2016-12-30", "2015-12-31", "2014-12-31"]
+values = microsoftHighs
+values.sort()
 
 
-# names = ["2018-10-10", "2017-12-29", "2016-12-30", "2015-12-31", "2014-12-31"]
-# values = facebookHighs
-# values.sort()
-#
-#
-# plt.subplot(131)
-# plt.bar(names, values)
-# plt.xticks(rotation=90)
-# plt.xlabel('Years')
-# plt.ylabel('Stock Prices (High)')
-# plt.show()
+plt.subplot(131)
+plt.bar(names, values)
+plt.xticks(rotation=90)
+plt.xlabel('Years')
+plt.ylabel('Stock Prices (High)')
+plt.show()
 
 
-# names = ["2018-10-10", "2017-12-29", "2016-12-30", "2015-12-31", "2014-12-31"]
-# values = zyngaHighs
-# values.sort()
-#
-#
-# plt.subplot(131)
-# plt.bar(names, values)
-# plt.xticks(rotation=90)
-# plt.xlabel('Years')
-# plt.ylabel('Stock Prices (High)')
-# plt.show()
-#
-#
+names = ["2018-10-10", "2017-12-29", "2016-12-30", "2015-12-31", "2014-12-31"]
+values = facebookHighs
+values.sort()
+
+
+plt.subplot(131)
+plt.bar(names, values)
+plt.xticks(rotation=90)
+plt.xlabel('Years')
+plt.ylabel('Stock Prices (High)')
+plt.show()
+
+
+names = ["2018-10-10", "2017-12-29", "2016-12-30", "2015-12-31", "2014-12-31"]
+values = zyngaHighs
+values.sort()
+
+
+plt.subplot(131)
+plt.bar(names, values)
+plt.xticks(rotation=90)
+plt.xlabel('Years')
+plt.ylabel('Stock Prices (High)')
+plt.show()
+
+
 names = ["2018-10-10", "2017-12-29", "2016-12-30", "2015-12-31", "2014-12-31"]
 values = appleHighs
 values.sort()
